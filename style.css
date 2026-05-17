@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background: #fdfdfd;
+}
+
+header {
+  background: #004080;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 3em 1em;
+  background: #e0f7fa;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #004080;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f0f0f0;
+  padding: 1.5em;
+  border-radius: 8px;
+  width: 28%;
+  text-align: center;
+  margin: 10px;
+}
+
+.testimonials {
+  background: #f9f9f9;
+  padding: 2em;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #004080;
+  color: white;
+}
+
+footer a {
+  color: #e0f7fa;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
